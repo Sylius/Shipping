@@ -16,24 +16,18 @@ use Sylius\Component\Shipping\Model\ShippingCategoryInterface;
 use Sylius\Component\Shipping\Model\ShippingMethodInterface;
 
 /**
- * @author Paweł Jędrzejewski <pawel@sylius.org>
  * @author Gonzalo Vilaseca <gvilaseca@reiss.co.uk>
  */
-class ShippingMethodSpec extends ObjectBehavior
+class ShippingMethodTranslation extends ObjectBehavior
 {
-    public function let()
-    {
-        $this->setCurrentLocale('en');
-    }
-
     function it_is_initializable()
     {
-        $this->shouldHaveType('Sylius\Component\Shipping\Model\ShippingMethod');
+        $this->shouldHaveType('Sylius\Component\Shipping\Model\ShippingMethodTranslation');
     }
 
     function it_implements_Sylius_shipping_method_interface()
     {
-        $this->shouldImplement('Sylius\Component\Shipping\Model\ShippingMethodInterface');
+        $this->shouldImplement('Sylius\Component\Shipping\Model\ShippingMethodTranslationInterface');
     }
 
     function it_has_no_id_by_default()
