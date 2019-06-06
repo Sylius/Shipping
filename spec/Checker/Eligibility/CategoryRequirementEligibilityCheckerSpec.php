@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace spec\Sylius\Component\Shipping\Checker;
+namespace spec\Sylius\Component\Shipping\Checker\Eligibility;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use PhpSpec\ObjectBehavior;
@@ -21,7 +21,7 @@ use Sylius\Component\Shipping\Model\ShippingCategoryInterface;
 use Sylius\Component\Shipping\Model\ShippingMethodInterface;
 use Sylius\Component\Shipping\Model\ShippingSubjectInterface;
 
-final class ShippingMethodEligibilityCheckerSpec extends ObjectBehavior
+final class CategoryRequirementEligibilityCheckerSpec extends ObjectBehavior
 {
     function it_implements_shipping_method_eligibility_checker_interface(): void
     {
